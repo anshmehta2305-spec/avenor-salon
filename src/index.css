@@ -1,0 +1,274 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* =========================================================================
+   AVENOR LUXURY DESIGN SYSTEM: SEMANTIC DUAL-THEME ENGINE
+   ========================================================================= */
+
+/* Dark Mode (Default) */
+:root,
+[data-theme="dark"] {
+  color-scheme: dark;
+
+  /* Surfaces & Backgrounds */
+  --bg: #0B0B0C;
+  --bg-page: #0B0B0C;
+  --surface: #161418;
+  --bg-card: #161418;
+  --surface-alt: #121114;
+  --bg-alt: #121114;
+  --surface-elevated: #1F1B22;
+  --bg-elevated: #1F1B22;
+  --overlay: rgba(0, 0, 0, 0.85);
+
+  /* Typography */
+  --text-primary: #FAF7F2;
+  --text-main: #FAF7F2;
+  --text-secondary: #D6CEC3;
+  --text-soft: #D6CEC3;
+  --text-muted: #9C948B;
+  --text-faint: #9C948B;
+  --text-on-accent: #0B0B0C;
+
+  /* Accents & Gold Spectrum */
+  --accent: #E6C068;
+  --gold: #E6C068;
+  --accent-deep: #C5A059;
+  --gold-deep: #C5A059;
+  --accent-light: #F5D98A;
+  --gold-light: #F5D98A;
+  --accent-contrast: #0B0B0C;
+  --accent-hover: #F5D98A;
+  --gold-gradient: linear-gradient(135deg, #F5D98A, #E6C068);
+
+  /* Borders & Dividers */
+  --border: rgba(230, 192, 104, 0.16);
+  --line: rgba(230, 192, 104, 0.16);
+  --border-strong: rgba(230, 192, 104, 0.35);
+  --line-strong: rgba(230, 192, 104, 0.35);
+
+  /* Elevation Shadows */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.6);
+  --shadow-card: 0 10px 30px rgba(0, 0, 0, 0.6);
+  --shadow-lg: 0 20px 50px rgba(0, 0, 0, 0.85);
+  --shadow-soft: 0 20px 50px rgba(0, 0, 0, 0.8);
+
+  /* Component Specifics */
+  --concierge: #1B3D2F;
+  --header-bg: rgba(11, 11, 12, 0.92);
+  --hero-overlay: linear-gradient(90deg, rgba(11, 11, 12, 0.95) 0%, rgba(11, 11, 12, 0.8) 42%, rgba(28, 4, 7, 0.6) 75%, rgba(11, 11, 12, 0.4) 100%);
+  --badge-bg: rgba(28, 4, 7, 0.9);
+  --badge-border: rgba(230, 192, 104, 0.35);
+  --badge-text: #F5D98A;
+
+  /* Inputs & Forms */
+  --input-bg: #161418;
+  --input-border: rgba(230, 192, 104, 0.25);
+  --placeholder: #9C948B;
+
+  /* Buttons */
+  --btn-primary-bg: linear-gradient(135deg, #F5D98A, #E6C068);
+  --btn-primary-text: #0B0B0C;
+  --btn-primary-border: transparent;
+  --btn-primary-hover: brightness(1.08);
+  --btn-secondary-bg: #161418;
+  --btn-secondary-border: rgba(230, 192, 104, 0.35);
+  --btn-secondary-text: #FAF7F2;
+
+  /* Scrollbar */
+  --track-bg: #0B0B0C;
+  --thumb-bg: #362225;
+}
+
+/* Light / Day Mode (Warm Ivory Theme) */
+[data-theme="light"],
+[data-theme="day"] {
+  color-scheme: light;
+
+  /* Surfaces & Backgrounds */
+  --bg: #F7F2E9;
+  --bg-page: #F7F2E9;
+  --surface: #FFFDF8;
+  --bg-card: #FFFDF8;
+  --surface-alt: #EFE8DA;
+  --bg-alt: #EFE8DA;
+  --surface-elevated: #FFFFFF;
+  --bg-elevated: #FFFFFF;
+  --overlay: rgba(20, 16, 12, 0.72);
+
+  /* Typography (WCAG AA Compliant on #F7F2E9 and #FFFDF8) */
+  --text-primary: #1F1A14;
+  --text-main: #1F1A14;
+  --text-secondary: #5A5148;
+  --text-soft: #5A5148;
+  --text-muted: #756B60;
+  --text-faint: #756B60;
+  --text-on-accent: #1F1A14;
+
+  /* Accents & Gold Spectrum */
+  --accent: #B8923A;
+  --gold: #B8923A;
+  --accent-deep: #8A6A22;
+  --gold-deep: #8A6A22;
+  --accent-light: #D4B46A;
+  --gold-light: #D4B46A;
+  --accent-contrast: #1F1A14;
+  --accent-hover: #9E7A2A;
+  --gold-gradient: linear-gradient(135deg, #D4B46A, #B8923A);
+
+  /* Borders & Dividers */
+  --border: rgba(31, 26, 20, 0.14);
+  --line: rgba(31, 26, 20, 0.14);
+  --border-strong: rgba(31, 26, 20, 0.28);
+  --line-strong: rgba(31, 26, 20, 0.28);
+
+  /* Elevation Shadows */
+  --shadow-sm: 0 2px 8px rgba(60, 45, 20, 0.06);
+  --shadow-md: 0 6px 20px rgba(60, 45, 20, 0.09);
+  --shadow-card: 0 4px 16px rgba(60, 45, 20, 0.08);
+  --shadow-lg: 0 16px 40px rgba(60, 45, 20, 0.16);
+  --shadow-soft: 0 10px 30px rgba(60, 45, 20, 0.1);
+
+  /* Component Specifics */
+  --concierge: #1F5C46;
+  --header-bg: rgba(247, 242, 233, 0.94);
+  --hero-overlay: linear-gradient(90deg, rgba(247, 242, 233, 0.96) 0%, rgba(247, 242, 233, 0.82) 42%, rgba(247, 242, 233, 0.3) 75%, rgba(247, 242, 233, 0.08) 100%);
+  --badge-bg: rgba(239, 232, 218, 0.95);
+  --badge-border: rgba(184, 146, 58, 0.4);
+  --badge-text: #8A6A22;
+
+  /* Inputs & Forms */
+  --input-bg: #FFFFFF;
+  --input-border: rgba(31, 26, 20, 0.22);
+  --placeholder: #8C8374;
+
+  /* High-Contrast Primary Buttons (Solid Dark Charcoal with Cream/Gold text) */
+  --btn-primary-bg: #1F1A14;
+  --btn-primary-text: #FAF5EB;
+  --btn-primary-border: #B8923A;
+  --btn-primary-hover: #332B22;
+  --btn-secondary-bg: #FFFDF8;
+  --btn-secondary-border: rgba(31, 26, 20, 0.22);
+  --btn-secondary-text: #1F1A14;
+
+  /* Scrollbar */
+  --track-bg: #EFE8DA;
+  --thumb-bg: #D4B46A;
+}
+
+/* Base Body Application & 300ms Theme Transition */
+html {
+  background-color: var(--bg);
+  color: var(--text-primary);
+  transition: background-color 300ms ease, color 300ms ease;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text-primary);
+  transition: background-color 300ms ease, color 300ms ease;
+}
+
+/* Smooth transitions on theme switch */
+html,
+body,
+header,
+main,
+section,
+div:not([class*="animate-"]),
+button,
+input,
+textarea,
+select,
+span,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+  transition-property: background-color, border-color, color, fill, stroke, box-shadow;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Custom Luxury Scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-track {
+  background: var(--track-bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--thumb-bg);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent);
+}
+
+/* Typography Gradient */
+.gold-gradient-text {
+  background: var(--gold-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Luxury Theme Utilities */
+.theme-card {
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
+}
+
+.theme-card:hover {
+  border-color: var(--accent);
+}
+
+.theme-card-elevated {
+  background-color: var(--surface-elevated);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-md);
+}
+
+.theme-btn-primary,
+.btn-avenor-primary {
+  background: var(--btn-primary-bg) !important;
+  color: var(--btn-primary-text) !important;
+  border: 1px solid var(--btn-primary-border) !important;
+  font-weight: 700;
+  box-shadow: var(--shadow-sm);
+}
+
+.theme-btn-primary:hover,
+.btn-avenor-primary:hover {
+  filter: var(--btn-primary-hover);
+  box-shadow: var(--shadow-md);
+}
+
+.theme-btn-secondary {
+  background-color: var(--btn-secondary-bg);
+  border: 1px solid var(--btn-secondary-border);
+  color: var(--btn-secondary-text);
+}
+
+.theme-btn-secondary:hover {
+  border-color: var(--accent);
+  color: var(--accent-deep);
+}
+
+.theme-input {
+  background-color: var(--input-bg);
+  color: var(--text-primary);
+  border: 1px solid var(--input-border);
+}
+
+.theme-input:focus {
+  border-color: var(--accent);
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(184, 146, 58, 0.25);
+}
